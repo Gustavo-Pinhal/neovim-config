@@ -40,6 +40,7 @@ return {
         vim.list_extend(ensure_installed, {
             'stylua',
             'prettier',
+            'pretty-php',
         })
         require('mason-tool-installer').setup({ ensure_installed = ensure_installed })
 

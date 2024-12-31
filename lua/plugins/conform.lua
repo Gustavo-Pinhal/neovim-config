@@ -44,6 +44,7 @@ return {
         formatters_by_ft = {
             lua = { 'stylua' },
             javascript = { 'prettier' },
+            php = { 'pretty-php' },
         },
     },
 }
