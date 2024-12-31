@@ -9,4 +9,5 @@ local lspconfig = require('lspconfig')
 return {
     lua_ls = {},
     ts_ls = {},
+    phpactor = {},
 }
