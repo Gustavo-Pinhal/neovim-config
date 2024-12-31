@@ -32,6 +32,12 @@ return {
                     prompt_title = 'Live Grep in Open Files',
                 })
             end, { desc = 'Telescope live grep in Open Files' })
+
+            vim.keymap.set('n', '<leader>fiv', function()
+                builtin.find_files({
+                    cwd = vim.fn.stdpath('config'),
+                })
+            end, { desc = 'Open nvim config file' })
         end,
     },
     {
