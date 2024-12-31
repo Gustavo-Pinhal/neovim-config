@@ -24,8 +24,12 @@ map('n', '<C-l>', '<C-w>l', { desc = 'switch window right' })
 map('n', '<C-j>', '<C-w>j', { desc = 'switch window down' })
 map('n', '<C-k>', '<C-w>k', { desc = 'switch window up' })
 
-map('n', '<Esc>', '<cmd>noh<CR>', { desc = 'general clear highlights' })
-
 -- Alternar comentário
 map('n', '<leader>/', 'gcc', { desc = 'toggle comment', remap = true })
 map('v', '<leader>/', 'gc', { desc = 'toggle comment', remap = true })
+
+-- Demais
+map('n', '<Esc>', '<cmd>noh<CR>', { desc = 'general clear highlights' })
+map('n', '<Esc>', '<cmd>noh<CR>', { desc = 'general clear highlights' })
+map('n', '<space>a', ':!', { desc = 'Executar bash' })
+map('n', '<space>ha', ':!git ', { desc = '' })
