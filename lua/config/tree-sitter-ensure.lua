@@ -14,4 +14,6 @@ return {
     'typescript',
     'html',
     'css',
+    'php',
+    'twig',
 }

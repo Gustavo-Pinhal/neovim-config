@@ -41,10 +41,7 @@ return {
         end,
 
         -- [[ Definição dos formatadores ]]
-        formatters_by_ft = {
-            lua = { 'stylua' },
-            javascript = { 'prettier' },
-            php = { 'pretty-php' },
-        },
+        -- Formatadores são configurados em config/formatters.lua
+        formatters_by_ft = require('config.formatters').formatters_by_ft,
     },
 }

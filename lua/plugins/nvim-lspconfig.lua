@@ -32,16 +32,13 @@ return {
         -- [[ Instalar, carregar e configurar servidores automaticamente ]]
         -- os servidores são definidos em config/lsp-servers.lua
         -- servidores e outros itens são baixados automaticamente com Mason
+        -- formatadores definidos em config/formatters.lua são baixados pelo Mason
         -- capabilities refere-se à integração do Autocomplete (cmp) com o LSP
 
         local servers = require('config.lsp-servers')
 
         local ensure_installed = vim.tbl_keys(servers or {})
-        vim.list_extend(ensure_installed, {
-            'stylua',
-            'prettier',
-            'pretty-php',
-        })
+        vim.list_extend(ensure_installed, require('config.formatters').ensure_installed)
         require('mason-tool-installer').setup({ ensure_installed = ensure_installed })
 
         local capabilities = vim.lsp.protocol.make_client_capabilities()
