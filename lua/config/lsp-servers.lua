@@ -7,7 +7,9 @@
 local lspconfig = require('lspconfig')
 
 return {
-    lua_ls = {},
-    ts_ls = {},
-    phpactor = {},
+    -- lua_ls = {},
+    -- ts_ls = {
+    --     filetypes = { 'javascript', 'javascriptreact', 'javascript.jsx', 'typescript', 'typescriptreact', 'typescript.tsx' },
+    -- },
+    -- phpactor = {},
 }
