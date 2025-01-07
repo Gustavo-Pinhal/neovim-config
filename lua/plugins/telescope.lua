@@ -11,7 +11,7 @@ return {
         config = function()
             require('telescope').setup({
                 defaults = {
-                    file_ignore_patterns = { '^node_modules/', '^vendor/' },
+                    file_ignore_patterns = require('config.random').telescope_ignore,
                 },
             })
             local builtin = require('telescope.builtin')
